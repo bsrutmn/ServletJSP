@@ -21,7 +21,7 @@ public class ServletConfigClass extends HttpServlet {
 		ServletConfig config = getServletConfig();
 		
 		response.getWriter().write("params"+config.getInitParameter("kubra")+"  ");
-		response.getWriter().write("params two"+config.getInitParameter("busra")+"  ");
+		response.getWriter().write("second params"+config.getInitParameter("busra")+"  ");
 		 response.getWriter().write("Server name:"+config.getServletName());
 
 	}
