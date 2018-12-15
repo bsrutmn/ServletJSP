@@ -19,8 +19,9 @@ public class ServletConfigClass extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		ServletConfig config = getServletConfig();
-		response.getWriter().write("this is paramter");
-		response.getWriter().write("params"+config.getInitParameter("kubra")+"</br>");
+		
+		response.getWriter().write("params"+config.getInitParameter("kubra")+"  ");
+		response.getWriter().write("params two"+config.getInitParameter("busra")+"  ");
 		 response.getWriter().write("Server name:"+config.getServletName());
 
 	}
