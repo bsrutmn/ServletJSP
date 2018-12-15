@@ -9,13 +9,28 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
   <servlet>
-  <servlet-name>FirstServlet</servlet-name>
-  <servlet-class>helloServlet.HelloServlet</servlet-class>
+    <servlet-name>FirstServlet</servlet-name>
+    <servlet-class>helloServlet.HelloServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  <servlet-name>FirstServlet</servlet-name>
-  <url-pattern>/hello</url-pattern>
+    <servlet-name>FirstServlet</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletConfigClass</servlet-name>
+    <servlet-class>servletConfig.ServletConfigClass</servlet-class>
+    <init-param>
+      <param-name>busra</param-name>
+      <param-value>Busra Utman</param-value>
+    </init-param>
+    <init-param>
+      <param-name>kubra</param-name>
+      <param-value>KubraUtman</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletConfigClass</servlet-name>
+    <url-pattern>/ServletConfigClass</url-pattern>
   </servlet-mapping>
 </web-app>
